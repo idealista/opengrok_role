@@ -1,0 +1,6 @@
+---
+- hosts: opengrok
+  roles:
+    - java
+    - tomcat
+    - opengrok-role

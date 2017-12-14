@@ -1,0 +1,13 @@
+http:
+  http://localhost:8080/source/:
+    status: 200
+
+group:
+  {{ opengrok_group }}:
+    exists: true
+
+user:
+  {{ opengrok_user }}:
+    exists: true
+    groups:
+      - {{ opengrok_group }}

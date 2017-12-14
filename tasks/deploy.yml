@@ -1,0 +1,24 @@
+---
+- name: OpenGrok | Delete previous installation if wanted
+  file:
+    path: "{{ item }}"
+    state: absent
+  with_items:
+    - "{{ opengrok_tomcat_install_dir }}/webapps/source.war"
+    - "{{ opengrok_tomcat_install_dir }}/webapps/source/"
+  when: opengrok_reinstall
+
+- name: OpenGrok | Deploy opengrok to tomcat
+  command: ./OpenGrok deploy
+  args:
+    chdir: "{{ opengrok_workdir }}/opengrok-{{ opengrok_version }}/bin/"
+    creates: "{{ opengrok_tomcat_install_dir }}/webapps/source.war"
+  environment:
+    OPENGROK_TOMCAT_BASE: "{{ opengrok_tomcat_install_dir }}"
+    OPENGROK_INSTANCE_BASE: "{{ opengrok_sources_root }}"
+    OPENGROK_FLUSH_RAM_BUFFER_SIZE: "{{ opengrok_buffer_size }}"
+
+- name: OpenGrok | Wait tomcat to deploy war
+  wait_for:
+    path: "{{ opengrok_tomcat_install_dir }}/webapps/source/WEB-INF/web.xml"
+    state: present

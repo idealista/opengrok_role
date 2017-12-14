@@ -1,0 +1,22 @@
+---
+- name: OpenGrok | Install
+  include: install.yml
+  tags:
+    - install
+
+- name: OpenGrok | Deploy
+  include: deploy.yml
+  tags:
+    - deploy
+
+- name: OpenGrok | Index
+  include: index.yml
+  tags:
+    - index
+
+- name: OpenGrok | Configure auto index
+  include: auto_index.yml
+  tags:
+    - cron
+    - auto_index
+  when: opengrok_auto_index

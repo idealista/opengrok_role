@@ -1,0 +1,26 @@
+---
+opengrok_version: 1.0
+
+opengrok_user: opengrok
+opengrok_group: opengrok
+
+opengrok_reinstall: false
+opengrok_force_reindex: false
+
+opengrok_workdir: /opt/opengrok
+opengrok_sources_root: /opengrok_sources
+
+opengrok_tomcat_install_dir: /opt/tomcat
+
+opengrok_buffer_size: "-m 512"
+
+opengrok_auto_index: false
+opengrok_auto_index_script_path: "{{ playbook_dir }}/templates/opengrok/auto_index.sh.j2"
+opengrok_remote_auto_index: "{{ opengrok_workdir }}/opengrok-{{ opengrok_version }}/auto_index.sh"
+opengrok_cron_job:
+  user: root
+  minute: "*/10"
+  hour: "*"
+  day: "*"
+  weekday: "*"
+  month: "*"

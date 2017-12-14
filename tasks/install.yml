@@ -1,0 +1,36 @@
+---
+- name: OpenGrok | Install prerequisites
+  apt:
+    pkg: "{{ item }}"
+    update_cache: yes
+    cache_valid_time: 86400
+  with_items:
+    - "{{ opengrok_required_libs }}"
+
+- name: OpenGrok | Ensure opengrok group is present
+  group:
+    name: "{{ opengrok_group }}"
+
+- name: OpenGrok | Ensure opengrok user is present
+  user:
+    name: "{{ opengrok_user }}"
+    group: "{{ opengrok_group }}"
+
+- name: OpenGrok | Ensure opengrok skeleton paths
+  file:
+    path: "{{ item }}"
+    state: directory
+    owner: "{{ opengrok_user }}"
+    group: "{{ opengrok_group }}"
+  with_items:
+    - "{{ opengrok_workdir }}"
+    - "{{ opengrok_sources_root }}"
+
+- name: OpenGrok | Extract opengrok
+  unarchive:
+    src: "{{ opengrok_download_url }}"
+    remote_src: true
+    dest: "{{ opengrok_workdir }}"
+    owner: "{{ opengrok_user }}"
+    group: "{{ opengrok_group }}"
+    creates: "{{ opengrok_workdir }}/opengrok-{{ opengrok_version }}/"

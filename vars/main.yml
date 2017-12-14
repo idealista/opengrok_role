@@ -1,0 +1,8 @@
+---
+opengrok_download_url: "https://github.com/OpenGrok/OpenGrok/releases/download/{{ opengrok_version }}/opengrok-{{ opengrok_version }}.tar.gz"
+
+opengrok_required_libs:
+  - exuberant-ctags
+  - git
+  - curl
+  - jq
