@@ -8,7 +8,8 @@ opengrok_reinstall: false
 opengrok_force_reindex: false
 
 opengrok_workdir: /opt/opengrok
-opengrok_sources_root: /opengrok_sources
+opengrok_instance_base: /opengrok_sources
+opengrok_sources_root: "{{ opengrok_instance_base }}/src"
 
 opengrok_tomcat_install_dir: /opt/tomcat
 
