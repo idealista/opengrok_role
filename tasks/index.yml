@@ -18,6 +18,5 @@
   environment:
     OPENGROK_INSTANCE_BASE: "{{ opengrok_instance_base }}"
   when: opengrok_index_repos.changed or opengrok_force_reindex
-  changed_when: false
   tags:
     - skip_ansible_lint
