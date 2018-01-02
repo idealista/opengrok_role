@@ -1,7 +1,7 @@
 ---
 # Tomcat
 tomcat_download_wars: false
-tomcat_install_dir: "{{ opengrok_tomcat_install_dir }}"
+tomcat_install_path: "{{ opengrok_tomcat_install_dir }}"
 
 # Opengrok
 opengrok_git_user: ""

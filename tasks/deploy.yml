@@ -15,7 +15,7 @@
     creates: "{{ opengrok_tomcat_install_dir }}/webapps/source.war"
   environment:
     OPENGROK_TOMCAT_BASE: "{{ opengrok_tomcat_install_dir }}"
-    OPENGROK_INSTANCE_BASE: "{{ opengrok_sources_root }}"
+    OPENGROK_INSTANCE_BASE: "{{ opengrok_instance_base }}"
     OPENGROK_FLUSH_RAM_BUFFER_SIZE: "{{ opengrok_buffer_size }}"
 
 - name: OpenGrok | Wait tomcat to deploy war

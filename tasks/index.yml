@@ -4,7 +4,7 @@
     accept_hostkey: yes
     force: yes
     repo: "{{ item.url }}"
-    dest: "{{ opengrok_sources_root }}/src/{{ item.name }}"
+    dest: "{{ opengrok_sources_root }}/{{ item.name }}"
   with_items: "{{ opengrok_repositories }}"
   register: opengrok_index_repos
   when: opengrok_repositories is defined
@@ -12,11 +12,11 @@
     - skip_ansible_lint
 
 - name: OpenGrok | Index repositories
-  command: ./OpenGrok index
+  command: ./OpenGrok index {{ opengrok_sources_root }}
   args:
     chdir: "{{ opengrok_workdir }}/opengrok-{{ opengrok_version }}/bin/"
   environment:
-    OPENGROK_INSTANCE_BASE: "{{ opengrok_sources_root }}"
+    OPENGROK_INSTANCE_BASE: "{{ opengrok_instance_base }}"
   when: opengrok_index_repos.changed or opengrok_force_reindex
   tags:
     - skip_ansible_lint

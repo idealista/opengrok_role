@@ -24,6 +24,7 @@
     group: "{{ opengrok_group }}"
   with_items:
     - "{{ opengrok_workdir }}"
+    - "{{ opengrok_instance_base }}"
     - "{{ opengrok_sources_root }}"
 
 - name: OpenGrok | Extract opengrok
