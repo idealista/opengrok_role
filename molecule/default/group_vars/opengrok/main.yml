@@ -1,0 +1,13 @@
+---
+# Tomcat
+tomcat_download_wars: false
+tomcat_install_path: "{{ opengrok_tomcat_install_dir }}"
+
+# Opengrok
+opengrok_git_user: ""
+opengrok_git_password: ""
+opengrok_stash_server: github.com
+opengrok_auto_index: true
+
+opengrok_repositories:
+  - { name: opengrok, url: "https://github.com/idealista/opengrok-role.git" }

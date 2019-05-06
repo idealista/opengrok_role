@@ -23,7 +23,7 @@ These instructions will get you a copy of the role for your Ansible playbook. On
 
 ### Prerequisities
 
-Ansible 2.3.1.0 version installed.
+Ansible 2.4.5.0 version installed.
 Inventory destination should be a Debian environment.
 A Tomcat server needs to be installed in your host machine (you can install it using our [Tomcat role](https://github.com/idealista/tomcat-role)).
 
@@ -74,7 +74,7 @@ See molecule.yml to check possible testing platforms. As a reminder, our tests a
 
 ## Built With
 
-![Ansible](https://img.shields.io/badge/ansible-2.3.1.0-green.svg)
+![Ansible](https://img.shields.io/badge/ansible-2.4.5.0-green.svg)
 
 ## Versioning
 
@@ -90,7 +90,7 @@ See also the list of [contributors](https://github.com/idealista/opengrok-role/c
 
 ## License
 
-![Apache 2.0 Licence](https://img.shields.io/hexpm/l/plug.svg)
+![Apache 2.0 License](https://img.shields.io/hexpm/l/plug.svg)
 
 This project is licensed under the [Apache 2.0](https://www.apache.org/licenses/LICENSE-2.0) license - see the [LICENSE](LICENSE) file for details.
 

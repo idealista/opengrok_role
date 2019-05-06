@@ -1,22 +1,27 @@
 ---
 - name: OpenGrok | Install
-  include: install.yml
+  import_tasks: install.yml
   tags:
     - install
+    - opengrok_install
 
 - name: OpenGrok | Deploy
-  include: deploy.yml
+  import_tasks: deploy.yml
   tags:
     - deploy
+    - opengrok_deploy
 
 - name: OpenGrok | Index
-  include: index.yml
+  import_tasks: index.yml
   tags:
     - index
+    - opengrok_index
 
 - name: OpenGrok | Configure auto index
-  include: auto_index.yml
+  import_tasks: auto_index.yml
   tags:
     - cron
     - auto_index
+    - opengrok_cron
+    - opengrok_auto_index
   when: opengrok_auto_index
