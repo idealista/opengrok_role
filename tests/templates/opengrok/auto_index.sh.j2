@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-cd {{ opengrok_sources_root }}
-find . -maxdepth 1 -type d -exec sh -c '(cd {} && git pull)' ';'
-
-OPENGROK_INSTANCE_BASE={{ opengrok_instance_base }} {{ opengrok_workdir }}/opengrok-{{ opengrok_version }}/bin/OpenGrok index {{ opengrok_sources_root }}
