@@ -27,7 +27,7 @@ Ansible 2.4.5.0 version installed.
 Inventory destination should be a Debian environment.
 A Tomcat server needs to be installed in your host machine (you can install it using our [Tomcat role](https://github.com/idealista/tomcat-role)).
 
-For testing purposes, [Molecule](https://molecule.readthedocs.io/) (version 1.25) with [Vagrant](https://www.vagrantup.com/) as driver (with [landrush](https://github.com/vagrant-landrush/landrush) plugin) and [VirtualBox](https://www.virtualbox.org/) or [Docker](https://www.docker.com/) as provider.
+For testing purposes, [Molecule](https://molecule.readthedocs.io/) with [Docker](https://www.docker.com/) as driver.
 
 ### Installing
 
@@ -60,27 +60,22 @@ Look to the [defaults](defaults/main.yml) properties file to see the possible co
 
 ## Testing
 
-### Using Vagrant as provider
 ```
-molecule test
+pipenv install -r test-requirements.txt
+pipenv run molecule test
 ```
-
-### Using Docker as provider
-```
-molecule test --driver docker
-```
-
-See molecule.yml to check possible testing platforms. As a reminder, our tests are just compatible with Molecule 1.x
 
 ## Built With
 
 ![Ansible](https://img.shields.io/badge/ansible-2.4.5.0-green.svg)
+![Molecule](https://img.shields.io/badge/molecule-2.20.1-green.svg)
+![Goss](https://img.shields.io/badge/goss-0.36-green.svg)
 
 ## Versioning
 
 For the versions available, see the [tags on this repository](https://github.com/idealista/opengrok-role/tags).
 
-Additionaly you can see what change in each version in the [CHANGELOG.md](CHANGELOG.md) file.
+Additionaly you can see what changed in each version in the [CHANGELOG.md](CHANGELOG.md) file.
 
 ## Authors
 
