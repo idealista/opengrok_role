@@ -16,7 +16,7 @@
 
   vars_files:
     - ../../defaults/main.yml
-    - ./group_vars/airflow/main.yml
+    - ./group_vars/opengrok/main.yml
 
   tasks:
     - name: Download and install Goss
