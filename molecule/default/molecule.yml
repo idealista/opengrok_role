@@ -8,8 +8,8 @@ lint:
   enabled: False
 
 platforms:
-  - name: opengrok-${MOLECULE_DISTRO:-stretch}
-    image: debian:${MOLECULE_DISTRO:-stretch}
+  - name: opengrok-container-test
+    image: idealista/jdk:8u181-stretch-openjdk-headless
     privileged: true
     capabilities:
       - SYS_ADMIN
