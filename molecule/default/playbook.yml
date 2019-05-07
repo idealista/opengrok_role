@@ -1,6 +1,7 @@
 ---
-- hosts: opengrok
+
+- name: Converge
+  hosts: all
   roles:
-    - java
     - tomcat
     - opengrok-role
