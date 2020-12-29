@@ -9,8 +9,10 @@ lint:
 
 platforms:
   - name: opengrok-container-test
-    image: idealista/jdk:8u181-stretch-openjdk-headless
+    image: idealista/jdk:8u265-stretch-openjdk-headless
     privileged: true
+    #    published_ports:
+    #      - 0.0.0.0:8080:8080/tcp
     capabilities:
       - SYS_ADMIN
     volumes:
