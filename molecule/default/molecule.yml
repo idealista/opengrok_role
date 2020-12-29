@@ -5,7 +5,7 @@ driver:
   name: docker
 lint:
   name: yamllint
-  enabled: False
+  enabled: true
 
 platforms:
   - name: opengrok-container-test
@@ -25,11 +25,11 @@ provisioner:
   name: ansible
   lint:
     name: ansible-lint
-    enabled: False
+    enabled: true
 scenario:
   name: default
 verifier:
   name: goss
   lint:
     name: yamllint
-    enabled: False
+    enabled: true
