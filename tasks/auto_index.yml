@@ -1,7 +1,7 @@
 ---
 - name: OpenGrok | Add auto_index script (provided by playbooks)
   template:
-    src: "{{ opengrok_auto_index_script_path}}"
+    src: "{{ opengrok_auto_index_script_path }}"
     dest: "{{ opengrok_remote_auto_index }}"
     owner: "{{ opengrok_user }}"
     group: "{{ opengrok_group }}"

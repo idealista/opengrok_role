@@ -1,4 +1,4 @@
 ---
-- src: idealista.tomcat-role
+- src: idealista.tomcat_role
   version: 1.8.0
   name: tomcat

@@ -2,13 +2,13 @@
 
 [![Build Status](https://travis-ci.org/idealista/opengrok-role.png)](https://travis-ci.org/idealista/opengrok-role)
 
-# {OpenGrok Ansible role
+# OpenGrok Ansible role
 
 This Ansible role installs {OpenGrok in a Debian environment. The app is deployed to a Tomcat server and will expose the endpoint `yourtomcatip:8080/source/`.
 
 - [Getting Started](#getting-started)
-	- [Prerequisities](#prerequisities)
-	- [Installing](#installing)
+  - [Prerequisities](#prerequisities)
+  - [Installing](#installing)
 - [Usage](#usage)
 - [Testing](#testing)
 - [Built With](#built-with)

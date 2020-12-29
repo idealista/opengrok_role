@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 
 ### Changed
 - *[#5](https://github.com/idealista/opengrok-role/issues/5) Upgrade to Molecule v2 and Ansible minimum version 2.4.5.0* @jnogol
+- *[#9](https://github.com/idealista/opengrok-role/issues/9) [REFACTOR] Update configuration to fix tests execution* @mapegama87
 
 ## [2.0.0](https://github.com/idealista/opengrok-role/tree/2.0.0)
 [Full Changelog](https://github.com/idealista/opengrok-role/compare/2.0.0...1.0.0)

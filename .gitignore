@@ -1,6 +1,5 @@
 # Ansible
 *.retry
-Pipfile*
 
 # Molecule
 .molecule
