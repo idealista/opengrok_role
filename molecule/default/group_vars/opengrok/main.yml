@@ -10,4 +10,4 @@ opengrok_stash_server: github.com
 opengrok_auto_index: true
 
 opengrok_repositories:
-  - { name: opengrok, url: "https://github.com/idealista/opengrok-role.git" }
+  - { name: opengrok, url: "https://github.com/idealista/opengrok_role.git" }

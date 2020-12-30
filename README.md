@@ -1,6 +1,6 @@
-![Logo](https://raw.githubusercontent.com/idealista/opengrok-role/master/logo.gif)
+![Logo](https://raw.githubusercontent.com/idealista/opengrok_role/master/logo.gif)
 
-[![Build Status](https://travis-ci.org/idealista/opengrok-role.png)](https://travis-ci.org/idealista/opengrok-role)
+[![Build Status](https://travis-ci.org/idealista/opengrok_role.png)](https://travis-ci.org/idealista/opengrok_role)
 
 # OpenGrok Ansible role
 
@@ -34,7 +34,7 @@ For testing purposes, [Molecule](https://molecule.readthedocs.io/) with [Docker]
 Create or add to your roles dependency file (e.g requirements.yml):
 
 ``` yml
-- src: idealista.opengrok-role
+- src: idealista.opengrok_role
   version: 1.0.0
   name: opengrok
 ```
@@ -67,13 +67,13 @@ pipenv run molecule test
 
 ## Built With
 
-![Ansible](https://img.shields.io/badge/ansible-2.4.5.0-green.svg)
+![Ansible](https://img.shields.io/badge/ansible-2.7.0-green.svg)
 ![Molecule](https://img.shields.io/badge/molecule-2.20.1-green.svg)
 ![Goss](https://img.shields.io/badge/goss-0.36-green.svg)
 
 ## Versioning
 
-For the versions available, see the [tags on this repository](https://github.com/idealista/opengrok-role/tags).
+For the versions available, see the [tags on this repository](https://github.com/idealista/opengrok_role/tags).
 
 Additionaly you can see what changed in each version in the [CHANGELOG.md](CHANGELOG.md) file.
 
@@ -81,7 +81,7 @@ Additionaly you can see what changed in each version in the [CHANGELOG.md](CHANG
 
 * **Idealista** - *Work with* - [idealista](https://github.com/idealista)
 
-See also the list of [contributors](https://github.com/idealista/opengrok-role/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/idealista/opengrok_role/contributors) who participated in this project.
 
 ## License
 
