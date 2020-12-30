@@ -1,6 +1,6 @@
 ![Logo](https://raw.githubusercontent.com/idealista/opengrok_role/master/logo.gif)
 
-[![Build Status](https://travis-ci.org/idealista/opengrok_role.png)](https://travis-ci.org/idealista/opengrok_role)
+[![Build Status](https://travis-ci.com/idealista/opengrok_role.png)](https://travis-ci.com/idealista/opengrok_role)
 
 # OpenGrok Ansible role
 
