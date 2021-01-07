@@ -2,7 +2,7 @@
 - name: OpenGrok | Install prerequisites
   apt:
     pkg: "{{ item }}"
-    update_cache: yes
+    update_cache: true
     cache_valid_time: 86400
   with_items:
     - "{{ opengrok_required_libs }}"

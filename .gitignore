@@ -1,7 +1,5 @@
-# Retry files after playbook failures
+# Ansible
 *.retry
 
-# Tests folders
-*.molecule
-*.cache
-*.vagrant
+# Molecule
+.molecule

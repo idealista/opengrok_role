@@ -1,8 +1,8 @@
 ---
 - name: OpenGrok | Get repositories to index
   git:
-    accept_hostkey: yes
-    force: yes
+    accept_hostkey: true
+    force: true
     repo: "{{ item.url }}"
     dest: "{{ opengrok_sources_root }}/{{ item.name }}"
   with_items: "{{ opengrok_repositories }}"
