@@ -1,10 +1,12 @@
 ---
 language: python
-python: "2.7.15"
+python: "3.9"
 sudo: required
 
 env:
   - PIPENV_IGNORE_VIRTUALENVS=1
+  - MOLECULE_DISTRO=debian:buster-slim
+  - MOLECULE_DISTRO=debian:bullseye-slim
 
 services:
   - docker
@@ -17,3 +19,9 @@ script:
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  email:
+    if: branch = main
+    on_success: change
+    on_failure: always
+    recipients:
+      - desarrollo.benders@idealista.com
