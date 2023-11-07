@@ -23,7 +23,7 @@ These instructions will get you a copy of the role for your Ansible playbook. On
 
 ### Prerequisities
 
-Ansible 2.4.5.0 version installed.
+Ansible 5.2.0 version installed.
 Inventory destination should be a Debian environment.
 A Tomcat server needs to be installed in your host machine (you can install it using our [Tomcat role](https://github.com/idealista/tomcat-role)).
 
@@ -67,8 +67,8 @@ pipenv run molecule test
 
 ## Built With
 
-![Ansible](https://img.shields.io/badge/ansible-2.7.0-green.svg)
-![Molecule](https://img.shields.io/badge/molecule-2.20.1-green.svg)
+![Ansible](https://img.shields.io/badge/ansible-5.2.0-green.svg)
+![Molecule](https://img.shields.io/badge/molecule-3.5.2-green.svg)
 ![Goss](https://img.shields.io/badge/goss-0.36-green.svg)
 
 ## Versioning
