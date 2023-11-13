@@ -1,5 +1,5 @@
 ---
-dist: bullseye
+dist: focal
 language: python
 sudo: required
 python: "3.9"
