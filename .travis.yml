@@ -1,5 +1,5 @@
 ---
-dist: bionic
+dist: bullseye
 language: python
 sudo: required
 python: "3.9"
