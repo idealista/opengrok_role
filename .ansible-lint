@@ -1,0 +1,9 @@
+---
+
+exclude_paths:
+  - ./molecule
+parseable: true
+use_default_rules: true
+verbosity: 1
+warn_list:
+  - risky-file-permissions
