@@ -21,6 +21,9 @@ platforms:
       - '/run/lock'
       - '/tmp'
 
+    groups:
+      - opengrok
+
 provisioner:
   name: ansible
   lint:
