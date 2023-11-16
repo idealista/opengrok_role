@@ -6,8 +6,8 @@ python: "3.9"
 
 env:
   jobs:
-    - MOLECULE_DISTRO=debian:buster-slim
-    - MOLECULE_DISTRO=debian:bullseye-slim
+    - MOLECULE_DISTRO=idealista/jdk:8u382-buster-temurin-jdk
+    - MOLECULE_DISTRO=idealista/jdk:8u382-bullseye-temurin-jdk
 
 services:
   - docker
