@@ -3,3 +3,6 @@
 
 # Molecule
 .molecule
+
+# IntelliJ
+.idea/
