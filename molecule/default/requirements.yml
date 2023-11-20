@@ -1,4 +1,5 @@
 ---
-- src: idealista.tomcat_role
-  version: 1.8.0
+- src: https://github.com/idealista/tomcat_role.git
+  scm: git
+  version: 1.10.4
   name: tomcat

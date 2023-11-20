@@ -1,19 +1,29 @@
 ---
+dist: focal
 language: python
-python: "2.7.15"
 sudo: required
+python: "3.9"
 
 env:
-  - PIPENV_IGNORE_VIRTUALENVS=1
+  jobs:
+    - MOLECULE_DISTRO=idealista/jdk:8u382-buster-temurin-jdk
+    - MOLECULE_DISTRO=idealista/jdk:8u382-bullseye-temurin-jdk
 
 services:
   - docker
 
 install:
-  - pip install pipenv==2018.11.26
-  - pipenv install -r test-requirements.txt
+  - pip install -I pipenv
+  - pipenv sync
+  -
 script:
   - pipenv run molecule test
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  email:
+    if: branch = main
+    on_success: change
+    on_failure: always
+    recipients:
+      - desarrollo.benders@idealista.com
