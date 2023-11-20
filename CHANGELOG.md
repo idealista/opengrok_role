@@ -7,9 +7,11 @@ This project adheres to [Semantic Versioning](http://semver.org/) and [Keep a ch
 ### Fixed
 ### Added
 ### Changed
-- *[#19](https://github.com/idealista/opengrok_role/issues/19)  General role update* @ipbrea
 ### Removed
 
+## [3.1.0](https://github.com/idealista/opengrok_role/tree/3.1.0)
+### Changed
+- *[#19](https://github.com/idealista/opengrok_role/issues/19)  General role update* @ipbrea
 
 ## [3.0.0](https://github.com/idealista/opengrok_role/tree/3.0.0)
 [Full Changelog](https://github.com/idealista/opengrok_role/compare/3.0.0...2.0.0)
